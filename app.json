@@ -3,7 +3,7 @@
   "description":"Hallo🍁",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://files.catbox.moe/mh36c7.jpg",
-  "repository":"https://github.com/NjabuloJ/fana-xmd",
+  "repository":"https://github.com/NjabuloAI/fana-xmd",
   "succes_url":"/",
   "stack":"container",
   "env":{
