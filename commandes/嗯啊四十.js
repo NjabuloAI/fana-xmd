@@ -52,7 +52,7 @@ const date = moment().format('DD/MM/YYYY');
     
     // Reply with ping results
     await zk.sendMessage(dest, {
-        text: `🏓*sᴛᴀᴛᴜs▰▰▰▰▰▰▰▱ᴘᴏɴɢ: ${formattedResults}ᴍs*`,
+        text: `🏓 *sᴛᴀᴛᴜs▰▰▰▰▰▱ᴘᴏɴɢ: ${formattedResults}ᴍs*`,
           }, { quoted: {
             key: {
                 fromMe: false,
