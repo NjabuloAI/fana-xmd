@@ -52,26 +52,7 @@ const date = moment().format('DD/MM/YYYY');
     
     // Reply with ping results
     await zk.sendMessage(dest, {
-        text: `🏓 *sᴛᴀᴛᴜs!*
-
-⚡ *ᴘᴏɴɢ:*  ${formattedResults}ᴍs
- ᴄᴏɴɴᴇᴄᴛɪᴏɴ sᴛᴀᴛᴜs  `,
-           contextInfo: {
-         isForwarded: true,
-         forwardedNewsletterMessageInfo: {
-         newsletterJid: '120363399999197102@newsletter',
-         newsletterName: "╭••➤®Njabulo Jb",
-         serverMessageId: 143,
-         },
-         forwardingScore: 999, // 
-         externalAdReply: {
-         title: "⏰ message pong status",
-         mediaType: 1,
-          previewType: 0,
-         thumbnailUrl: randomNjabulourl,
-         renderLargerThumbnail: false,
-        },
-        },
+        text: `🏓*sᴛᴀᴛᴜs▰▰▰▰▰▰▰▱ᴘᴏɴɢ: ${formattedResults}ᴍs*`,
           }, { quoted: {
             key: {
                 fromMe: false,
