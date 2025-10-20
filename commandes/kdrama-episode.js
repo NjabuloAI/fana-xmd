@@ -6,7 +6,7 @@ const moment = require("moment-timezone");
 
 
 fana({
-  nomCom: "hd",
+  nomCom: "kdrama-episode",
   aliases: ["vid", "mp4", "movie"],
   categorie: "download",
   reaction: "🎥"
@@ -16,7 +16,7 @@ fana({
 
   try {
     await zk.sendMessage(dest, { 
-      text: 'searching kdrama episode',
+      text: 'searching kdrama-episode',
           }, { quoted: {
             key: {
                 fromMe: false,
@@ -51,7 +51,7 @@ fana({
         } });
     }
     
-if (!arg.join(' ').toLowerCase().includes('episode')) {
+if (!arg.join(' ').toLowerCase().includes('kdrama-episode')) {
       return repondre("Only kdrama episode work");
     }
     
@@ -148,14 +148,12 @@ if (!arg.join(' ').toLowerCase().includes('episode')) {
 
        await zk.sendMessage(dest,{ 
         image: { url: video.thumbnail },
-        caption: `🎥 tιtᥣᥱ: *${video.title}*
-🎞️ dᥙrᥲtιon: *${video.timestamp}*
-📽️ vιᥱᥕs: *${video.views.toLocaleString()}*
-📹 ᥙρᥣoᥲdᥱd: *${video.ago}*
-📺 ᥴhᥲnnᥱᥣ: *${video.author.name}*
+        caption: `🎧title: *${video.title}*
+🎼views: *${video.views.toLocaleString()}*
+🎻 uploaded: *${video.ago}*
 
-🔗 url ${video.url}
-🌇 *hᥲᥣᥣo fᥲmιᥣყ  ${greeting}*`,
+*⇆ㅤ ||◁ㅤ❚❚ㅤ▷||ㅤ ↻*
+0:00 ──〇─────── :  *${video.timestamp}*`,
           }, { quoted: {
             key: {
                 fromMe: false,
