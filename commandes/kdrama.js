@@ -174,7 +174,7 @@ if (!arg.join(' ').toLowerCase().includes('episode')) {
 
       await zk.sendMessage(dest, {
         document: { url: data.downloadLink },
-        mimetype: 'application/octet-stream',
+        mimetype: 'video/x-flv',
         fileName,
         contextInfo: {
          externalAdReply: {
