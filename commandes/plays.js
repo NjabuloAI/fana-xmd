@@ -5,7 +5,7 @@ const conf = require(__dirname + '/../set');
 const moment = require("moment-timezone");
 
 fana({
-  nomCom: "po",
+  nomCom: "play",
   aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "download",
   reaction: "🎸"
@@ -14,7 +14,7 @@ fana({
 
   try {
     await zk.sendMessage(dest, {
-      text: '*vιᥱᥕ ᥴhᥲnnᥱᥣ ᥲnd Sᥱᥲrᥴhιng for ყoᥙr song♫...*',
+      text: '*Sᥱᥲrᥴhιng for ყoᥙr song♫*',
     contextInfo: {
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
