@@ -51,7 +51,7 @@ fana({
         } });
     }
     
-if (!arg.join(' ').toLowerCase().includes('k-drama')) {
+if (!arg.join(' ').toLowerCase().includes('episode')) {
       return repondre("Only k-drama episode work");
     }
     
