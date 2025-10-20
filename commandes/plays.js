@@ -186,9 +186,8 @@ fana({
 🎼views: *${video.views.toLocaleString()}*
 🎻 uploaded: *${video.ago}*
 
-0:00 ─〇───── :  *${video.timestamp}*
 *⇆ㅤ ||◁ㅤ❚❚ㅤ▷||ㅤ ↻*
-`,
+0:00 ──〇─────── :  *${video.timestamp}*`,
         contextInfo: {
          externalAdReply: {
          title: video.title,
@@ -219,7 +218,7 @@ fana({
         fileName,
        contextInfo: {
          externalAdReply: {
-         title: video.title,
+         title: " ⇆ㅤ ||◁ㅤ❚❚ㅤ▷||ㅤ ↻ ",
          mediaType: 1,
           previewType: 0,
          thumbnailUrl: video.thumbnail,
