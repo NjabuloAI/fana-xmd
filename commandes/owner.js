@@ -47,13 +47,14 @@ fana({ nomCom: "owner", categorie: "General", reaction: "❣️" }, async (dest,
     // Select a random image file
     const randomNjabulourl = njabulox[Math.floor(Math.random() * njabulox.length)];
     
-
+const njabuloai = `h`,
 
   await zk.sendMessage(chatId, {
-    text,
+  image: { url: randomNjabulourl },
+    caption: njabuloai,
     contextInfo: {
       externalAdReply: {
-          title: `ᥕᥱᥣᥴomᥱ fᥲmιᥣყ `,
+          title: conf.OWNER_NAME,
            mediaType: 1,
           previewType: 0,
               renderLargerThumbnail: false,
@@ -90,3 +91,11 @@ fana({ nomCom: "owner", categorie: "General", reaction: "❣️" }, async (dest,
     },{quoted:ms});
   }
  });
+
+ // Send the audio as a voice note after the ping message
+      const audioUrl = 'https://files.catbox.moe/4ufunx.mp3';
+      await zk.sendMessage(chatId, {
+        audio: { url: audioUrl },
+        mimetype: 'audio/mp4',
+        ptt: true
+      }, { quoted: m });
