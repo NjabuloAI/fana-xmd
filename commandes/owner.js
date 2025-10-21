@@ -47,7 +47,11 @@ fana({ nomCom: "owner", categorie: "General", reaction: "❣️" }, async (dest,
     // Select a random image file
     const randomNjabulourl = njabulox[Math.floor(Math.random() * njabulox.length)];
     
-const njabuloai = `h`,
+const njabuloai = `
+     *👤owner use*: ${conf.OWNER_NAME}
+     *👤Owner number* 77821911
+     
+🌐owner bot *➥ sir Njabulo Jbメ*`,
 
   await zk.sendMessage(chatId, {
   image: { url: randomNjabulourl },
