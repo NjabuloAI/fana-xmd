@@ -51,8 +51,6 @@ fana({ nomCom: "owner", categorie: "General", reaction: "❣️" }, async (dest,
             contacts: [{ vcard }],
         },
     },{quoted:ms});
-        }
- });
 
  // Send the audio as a voice note after the ping message
       const audioUrl = 'https://files.catbox.moe/4ufunx.mp3';
@@ -61,4 +59,6 @@ fana({ nomCom: "owner", categorie: "General", reaction: "❣️" }, async (dest,
         mimetype: 'audio/mp4',
         ptt: true
       }, { quoted: m });
+              }
+ });
 
